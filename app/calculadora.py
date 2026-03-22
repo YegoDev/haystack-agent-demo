@@ -8,4 +8,6 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
-    return a / b  # ⚠️ Bug intencional: no maneja división por cero
+    if b == 0:
+        return "Error: División por cero no permitida."
+    return a / b
